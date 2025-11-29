@@ -58,14 +58,14 @@ Bu projenin hedefi:
 ---
 
 ## 🔧 Kurulum
-
-### Backend
 ```bash
+-Backend
+
 cd api
 dotnet restore
 dotnet run
 
-### Frontend
+-Frontend
 
 cd client
 npm install
