@@ -70,7 +70,7 @@ dotnet run
 cd client
 npm install
 npm start
-
+```
 ---
 
 ## Kazanımlar
@@ -85,7 +85,4 @@ Bu projeyi geliştirirken:
 * Full-stack proje yönetimi
 
 gibi birçok modern web geliştirme konusu uygulanır.
-
-
----
 
