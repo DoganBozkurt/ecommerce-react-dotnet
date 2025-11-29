@@ -3,9 +3,7 @@
 
 Bu proje, modern web teknolojileri kullanılarak geliştirilmiş tam kapsamlı bir **e-ticaret uygulamasıdır**. Amaç; backend ve frontend tarafını birlikte kullanarak gerçek bir full-stack mimarisi oluşturmak ve dış servislere entegre çalışan bir alışveriş sistemi geliştirmektir.
 
----
-
-## Projenin Amacı
+## 🎯 Projenin Amacı
 
 Bu projenin hedefi:
 
@@ -54,38 +52,40 @@ Bu projenin hedefi:
 ## 📂 Proje Yapısı
 
 /e-commerce
-├── client/ → React + TypeScript frontend
-└── api/ → ASP.NET Core 9 Web API
+├── client/       → React + TypeScript frontend
+└── api/          → ASP.NET Core 9 Web API
 
+---
 
-## Kurulum
+## 🔧 Kurulum
 
 ### Backend
-bash
+```bash
 cd api
 dotnet restore
 dotnet run
-Frontend
-bash
-Kodu kopyala
+
+### Frontend
+
 cd client
 npm install
 npm start
 
-Kazanımlar
+---
+
+## Kazanımlar
+
 Bu projeyi geliştirirken:
 
-API geliştirme
-
-Frontend-Backend entegrasyonu
-
-TypeScript kullanımı
-
-Authentication & Authorization
-
-Ödeme sistemleri entegrasyonu
-
-Full-stack proje yönetimi
+* API geliştirme
+* Frontend–Backend entegrasyonu
+* TypeScript kullanımı
+* Authentication & Authorization
+* Ödeme sistemleri entegrasyonu
+* Full-stack proje yönetimi
 
 gibi birçok modern web geliştirme konusu uygulanır.
+
+
+---
 
