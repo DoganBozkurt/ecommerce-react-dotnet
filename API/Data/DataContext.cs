@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data;
 
-class DataContext: DbContext
+class DataContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<Product> Products => Set<Product>();
 }
