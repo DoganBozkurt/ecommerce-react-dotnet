@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace API.Entity;
-class Product
+public class Product
 {
     [Key]
     public int Id { get; set; }
