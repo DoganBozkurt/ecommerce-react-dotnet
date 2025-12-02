@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { IProduct } from "../model/IProduct";
 import ProductList from "./ProductList";
-import Header from "./header";
+import Header from "./Header";
+import CssBaseline from "@mui/material/CssBaseline";
+import Container from "@mui/material/Container";
 
 function App() {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -12,16 +14,13 @@ function App() {
       .then((data) => setProducts(data));
   }, []);
 
-  function addProduct() {
-    setProducts([
-      ...products,
-      { id: 3, name: "product 4", price: 30000, isActive: true },
-    ]);
-  }
   return (
     <>
-      <Header products={products} />
-      <ProductList products={products} addProduct={addProduct} />
+      <CssBaseline />
+      <Header />
+      <Container>
+        <ProductList products={products} />
+      </Container>
     </>
   );
 }
