@@ -1,5 +1,5 @@
 import { AddShoppingCart } from "@mui/icons-material";
-import { IProduct } from "../model/IProduct";
+import { IProduct } from "../../model/IProduct";
 import SearchIcon from "@mui/icons-material/Search";
 import {
   Button,
