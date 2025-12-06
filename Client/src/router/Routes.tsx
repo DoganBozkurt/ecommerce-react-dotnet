@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import CatalogPage from "../pages/catalog/CatalogPage";
+import CatalogDetailPage from "../pages/catalog/CatalogDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "catalog/:id",
-        element: <CatalogPage></CatalogPage>,
+        element: <CatalogDetailPage></CatalogDetailPage>,
       },
     ],
   },

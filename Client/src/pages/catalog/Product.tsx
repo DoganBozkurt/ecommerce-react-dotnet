@@ -9,6 +9,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router";
 interface Props {
   pro: IProduct;
 }
@@ -42,6 +43,8 @@ function Product({ pro }: Props) {
           Add to cart
         </Button>
         <Button
+          component={Link}
+          to={`/catalog/${pro.id}`}
           variant="outlined"
           size="small"
           startIcon={<SearchIcon></SearchIcon>}
