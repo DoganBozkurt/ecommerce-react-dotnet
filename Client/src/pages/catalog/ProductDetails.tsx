@@ -12,18 +12,20 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { IProduct } from "../../model/IProduct";
+import request from "../../api/request";
 
-export default function CatalogDetailPage() {
-  const { id } = useParams();
+export default function ProductDetails() {
+  const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<IProduct | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5072/api/Products/${id}`)
-      .then((response) => response.json())
-      .then((data) => setProduct(data))
-      .catch((error) => console.log(error))
-      .finally(() => setLoading(false));
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+    id &&
+      request.Catalog.details(parseInt(id))
+        .then((data) => setProduct(data))
+        .catch((error) => console.log(error))
+        .finally(() => setLoading(false));
   }, [id]);
 
   if (loading) return <CircularProgress />;
